@@ -12,7 +12,8 @@
         <section class="header">
             <nav>
                 <a href="index.html"><img src="images/UTS2.png"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="icons close" onclick="hideMenu()"">⎋</i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">HOME TOWM</a></li>
@@ -20,6 +21,7 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>
+                <i class="icons menu" onClick="showMenu()">⌘</i>
             </nav>
         <div class="text-box">
             <h1>HI, I'M LEO. <br> AN IT STUDENT AT UTS.</h1>
@@ -27,8 +29,19 @@
                 My full name is Leonardo Rodriguez Magana currently studying IT.<br>
                 My student number is: 14429346.
             </p>
-            <a href="mailto:leonardo.a.rodrguezmagana@student.uts.edu.au">Send me an email</a>
+            <a href="mailto:leonardo.a.rodrguezmagana@student.uts.edu.au" class="mail-btn">Send me an email</a>
         </div>
         </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
     </body>
 </html>

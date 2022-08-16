@@ -120,9 +120,19 @@ nav .icons{
     }
 }
 
+body > section.about > h1.myh1 {
+    color: red;
+}
+
+#myh1 {
+    color: blue;
+}
+
+
+
 /* ------------ About Me ---------*/
 
-.about{
+section.about{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -132,6 +142,11 @@ h1{
     font-size: 36px;
     font-weight: 600;
 }
+
+section > h1 {
+    color: orange;
+}
+
 p{
     color:#ede6e5;
     font-size: 14px;

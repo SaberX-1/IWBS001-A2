@@ -195,3 +195,7 @@ h3{
     background-size: cover;
     position: relative;
 }
+.map{
+    position: inherit;
+    
+}

@@ -7,9 +7,25 @@
     font-weight: 600;
     color: aqua;
 }
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #3ab1c8;
+}
+h3 {
+    color: #3ab1c8;
+    font-size: 24px;
+    font-weight: 600;
+}
 * p{
     font-size: 14px;
+    font-weight: 300px;
     color: #ede6e5;
+}
+* li {
+    font-size: 14px;
+    font-weight: 300px;
+    color: #8ef6e4;
 }
 body {
     background: #112240;
@@ -17,12 +33,14 @@ body {
 }
 section{
     margin: 0px auto;
-    padding: 100px-0px;
+    padding: 100px 0px;
     max-width: 1000px;
 }
 /* Header */
+
 nav{
     display: flex;
+    background-color: #2772db;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
@@ -69,9 +87,6 @@ nav .icons{
     min-height: 100vh;
     padding: 0px;
 }
-.hero h1, p{
-    text-align: center;
-}
 .mail-btn{
     display: inline-block;
     text-decoration: none;
@@ -88,55 +103,49 @@ nav .icons{
     background: #f44336;
     transition: 1s;
 }
-/* ------- mobile view -------*/
+/*  About Me */
 
-body > section.about > h1.myh1 {
-    color: red;
-}
-
-
-
-
-/* ------------ About Me ---------*/
-
-section.about{
+.about{
     width: 80%;
     margin: auto;
-    text-align: center;
+    align-items: center;
     padding-top: 100px;
+    max-width: 900px;
 }
-
-p{
-    color:#ede6e5;
-    font-size: 14px;
-    font-weight: 300;
+.about .p{
     line-height: 22px;
     padding: 10px;
 }
+.about .img-leo{
+    max-width: 100%;
+    height: auto;
+}
+.about .inner{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
 
-.row{
+.jobs {
+    width:80%;
+    margin: auto;
+    padding-top: 100px;
+    max-width: 900px;
+}
+.jobs .row{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
-.about-col{
+.jobs .row .about-col{
     flex-basis: 31%;
-    background: rgb(162, 18, 162);
+    background: #65bfb0;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
 }
-h3{
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.about-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
 /* Home town page */
 .header2{
     min-height: 100vh;

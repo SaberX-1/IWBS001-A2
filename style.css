@@ -1,25 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Silkscreen', cursive;
 }
-h1 {
-    color: orange;
+* h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: aqua;
+}
+* p{
+    font-size: 14px;
+    color: #ede6e5;
 }
 body {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,39,0.7),rgba(4,9,30,0.7)),url(images/pixel.gif);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: scroll;
-    background-size: cover;
-    position: relative;
+    background: #112240;
+    font-family: 'Silkscreen', cursive;
 }
-.header{
-    background-color: #2149a5;
-    opacity: 0.8;
+section{
+    margin: 0px auto;
+    padding: 100px-0px;
+    max-width: 1000px;
 }
+/* Header */
 nav{
     display: flex;
     padding: 2% 6%;
@@ -56,23 +57,20 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.text-box{
-    height: 150px;
-    width: 350px;
-    width: 90%;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+nav .icons{
+    display: none;
 }
-.text-box h1{
-    font-size: 62px;
+/* hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px;
 }
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: white;
+.hero h1, p{
+    text-align: center;
 }
 .mail-btn{
     display: inline-block;
@@ -90,30 +88,12 @@ nav img{
     background: #f44336;
     transition: 1s;
 }
-nav .icons{
-    display: none;
-}
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#leo {
-    max-width: 80%;
-    flex-basis: 40%;
-}
-.hero text{
-    padding-left: 20px;
-}
 /* ------- mobile view -------*/
 
 body > section.about > h1.myh1 {
     color: red;
 }
 
-#myh1 {
-    color: rgb(33, 33, 116);
-}
 
 
 
@@ -124,14 +104,6 @@ section.about{
     margin: auto;
     text-align: center;
     padding-top: 100px;
-}
-h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-
-section > h1 {
-    color: orange;
 }
 
 p{

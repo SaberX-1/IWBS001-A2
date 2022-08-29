@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Silkscreen', cursive;
-
+}
+h1 {
+    color: orange;
 }
 body {
     min-height: 100vh;
@@ -88,11 +90,20 @@ nav img{
     background: #f44336;
     transition: 1s;
 }
-.leo{
-    float: right;
-}
 nav .icons{
     display: none;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#leo {
+    max-width: 80%;
+    flex-basis: 40%;
+}
+.hero text{
+    padding-left: 20px;
 }
 /* ------- mobile view -------*/
 

@@ -90,6 +90,11 @@ nav .icons{
     min-height: 100vh;
     padding: 0px;
 }
+.herotown-img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 .mail-btn{
     display: inline-block;
     text-decoration: none;
@@ -122,6 +127,10 @@ nav .icons{
 .about .img-leo{
     max-width: 100%;
     height: auto;
+    opacity: 0.8;
+}
+.about .img-leo:hover{
+    opacity: 1;
 }
 .about .inner{
     display: grid;
@@ -185,13 +194,13 @@ nav .icons{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #2c2a2a;
 }
 .project-image:hover .overlay{
-    opacity: 1;
+    opacity: 0.8;
 }
 .projects .project-image .overlay .overlay-text{
-    color: #f44336;
+    color: #b836f4;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -210,24 +219,11 @@ nav .icons{
     bottom: 0;
     width: 100%;
     background-color:#2772db;
-    color: aliceblue;
+    color: rgb(6, 46, 82);
     text-align: center;
 }
 /* Home town page */
-.header2{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,39,0.7),rgba(4,9,30,0.7)),url(images/landscape-waterfall.gif);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: scroll;
-    background-size: cover;
-    position: relative;
-}
-.map{
-    position: inherit;
-    
-}
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;

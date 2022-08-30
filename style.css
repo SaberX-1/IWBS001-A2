@@ -37,7 +37,10 @@ section{
     max-width: 1000px;
 }
 /* Header */
-
+.header {
+    padding: 10px 16px;
+    background: #2772db;
+}
 nav{
     display: flex;
     background-color: #2772db;
@@ -126,25 +129,89 @@ nav .icons{
     gap: 50px;
 }
 
-.jobs {
+.education {
     width:80%;
     margin: auto;
     padding-top: 100px;
+    align-items: center;
     max-width: 900px;
 }
-.jobs .row{
-    margin-top: 5%;
+.education .card{
+    position: relative;
+    background-color: #272343;
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px;
     display: flex;
-    justify-content: space-between;
 }
-.jobs .row .about-col{
-    flex-basis: 31%;
-    background: #65bfb0;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
+.education .card .imgBx{
+    max-width: 150px;
+    flex: 0 0 150px;
+}
+.education .card .imgBx img{
+    max-width: 100%;
+}
+.education .card .content {
+    margin-left: 20px ;
+}
+.projects {
+    background-image:url(images/github-social.png) ;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding-top: 100px;
+    max-width: 900px;
+}
+.projects p{
+    line-height: 22px;
+    padding: 10px;
+}
+.projects .project-image{
+    position: relative;
+    width: 50%;
+}
+.projects .project-image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.projects .project-image .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.project-image:hover .overlay{
+    opacity: 1;
+}
+.projects .project-image .overlay .overlay-text{
+    color: #f44336;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.projects .project-inner{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#2772db;
+    color: aliceblue;
+    text-align: center;
 }
 /* Home town page */
 .header2{

@@ -1,0 +1,121 @@
+<!DOCKTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title> Home </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="layout_content">   
+            <div id="content">
+                <header class="header">
+                    <nav>
+                        <a href="index.html"><img src="images/UTS2.png"></a>
+                        <div class="nav-links">
+                            <i class="icons close" onClick="hideMenu()">☩</i>
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="town.html">HOME TOWN</a></li>
+                                <li><a href="activity.html">ACTIVITY</a></li>
+                            </ul>
+                        </div>
+                        <i class="icons menu" onclick="showMenu()">⌘</i>
+                    </nav>
+                </header>
+                <section class="hero">
+                        <div class="text">
+                            <h1>Activities I enjoy</h1>
+                            <h1>NONE</h1>
+                            <h1>BYE</h1>        
+                        </div>
+                </section>
+                <section class="about">
+                    <h2 >About me</h2>
+                    <div class="inner">
+                        <div>
+                            <p>
+                                <br>
+                                Hi, it's a pleasure that you are viewing my website.<br> Please call me Leo. <br>
+                                As previusly mentioned, I am currently studying IT. This website is part of my Web system assignment.
+                                <br><br> A little info about me.<br><br>
+                                I am currently 19 years old, and have a passion for learning and developing new skills. Hence I enjoy building things which live on the internet.
+                                My interest to dive into the world of IT began in 2021 where I was studying SDD (Software Design and Development) as my HSC elective.
+                                Within the course we learnt python, where I grew interest in the possibilities programming provides.
+                                <br>
+                                Fast forward to today, I have developed new skills and learnt new languages. <br>
+                                Some technologies I've being working with:
+                            </p>
+                            <ul class="skills-list">
+                                <br>
+                                <li> Python </li>
+                                <li> Java </li>
+                                <li> React </li>
+                                <li> JavaScript </li>
+                                <li> Node.js </li>
+                            </ul>
+                        </div>
+                        <div class="img-leo">
+                            <img src="images/Leo.jpeg">
+                        </div>
+                    </div>
+                </section>
+                <section class="education">
+                    <h2> Education </h2>
+                    <div class="card">
+                        <div class="imgBx">
+                            <a href="https://mortlake-p.schools.nsw.gov.au/" target="_blank">
+                            <img src="images/logo_1338266702302_m.png">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2>Primary</h2>
+                            <p> Escueala interamericana: 2014</p>
+                            <p> Mortlake Public School: 2014-2015</p> <br>
+                            <p> I came from El Salvador in 2014, and finished year 5 - 6 in Mortlake public school</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgBx">
+                            <a href="https://concord-h.schools.nsw.gov.au/" target="_blank">
+                            <img src="images/Concord-High-School-Logo.png">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2>Secondary</h2>
+                            <p> Concord High School : 2016-2021</p> <br>
+                            <p> Completed year 7 to 12</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgBx">
+                            <a href="https://utscollege.edu.au/au">
+                            <img src="images/UTS2.png">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2>Tertiary</h2>
+                            <p> UTS College: 2022</p> <br>
+                            <p> currently doing a diploma of IT</p>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <p> Design & built by Leonardo Rodriguez</p>
+                </footer>
+            </div>
+        </div>
+<!-------- JS for buttons ----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    </body>
+</html>

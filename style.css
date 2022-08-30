@@ -14,7 +14,7 @@ h2 {
 }
 h3 {
     color: #3ab1c8;
-    font-size: 24px;
+    font-size: 18;
     font-weight: 600;
 }
 * p{
@@ -26,6 +26,13 @@ h3 {
     font-size: 14px;
     font-weight: 300px;
     color: #8ef6e4;
+}
+* a {
+    color: #ffc93c;
+}
+* img{
+    max-width: 100%;
+    height: auto;
 }
 body {
     background: #112240;
@@ -132,12 +139,23 @@ nav .icons{
 .about .img-leo:hover{
     opacity: 1;
 }
+.about .inner .flag{
+    max-width: 100%;
+    height: auto;
+}
+.cathedral{
+    max-width: 100%;
+    height: auto;
+}
+.culture{
+    max-width: 100%;
+    height: auto;
+}
 .about .inner{
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
 }
-
 .education {
     width:80%;
     margin: auto;
@@ -212,6 +230,18 @@ nav .icons{
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px
+}
+.more{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding-top: 100px;
+    max-width: 900px;
+}
+.more-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .footer{
     position: fixed;
